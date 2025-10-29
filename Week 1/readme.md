@@ -48,7 +48,8 @@ def compute_model_output(x, w, b):
 Use **Mean Squared Error (MSE)** to quantify how far predictions are from targets.
 
 [
-$$\J(w, b) = \frac{1}{2m}\sum_{i=1}^{m}\big(\hat{y}_i - y_i\big)^2
+$$J(w, b) = \frac{1}{2m}\sum_{i=1}^{m}\big(\hat{y}_i - y_i\big)^2
+\quad\text{where }\hat{y}_i = w x_i + b$$
 ]
 
 ```python

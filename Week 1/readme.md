@@ -69,8 +69,13 @@ def compute_cost(x, y, w, b):
 Find the direction in which to adjust `w` and `b` to minimize cost.
 
 [
-$$\frac{\partial J}{\partial w} = \frac{1}{m}\sum_{i=1}^{m}\big(\hat{y}_i - y_i\big)\,x_i$$
-$$\frac{\partial J}{\partial b} = \frac{1}{m}\sum_{i=1}^{m}\big(\hat{y}_i - y_i\big)$$]
+$$
+\frac{\partial J}{\partial w} = \frac{1}{m} \sum_{i=1}^{m} \big( \hat{y}_i - y_i \big) x_i
+$$
+
+$$
+\frac{\partial J}{\partial b} = \frac{1}{m} \sum_{i=1}^{m} \big( \hat{y}_i - y_i \big)
+$$
 ]
 
 ```python

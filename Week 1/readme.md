@@ -33,7 +33,7 @@ b = 0.0
 
 The linear model predicts output using:
 [
-\hat{y} = w \cdot x + b
+$$\hat{y} = w x + b$$
 ]
 
 ```python
@@ -48,7 +48,7 @@ def compute_model_output(x, w, b):
 Use **Mean Squared Error (MSE)** to quantify how far predictions are from targets.
 
 [
-J(w, b) = \frac{1}{2m}\sum_{i=1}^{m}(f_{w,b}(x_i) - y_i)^2
+$$J(w, b) = \frac{1}{2m}\sum_{i=1}^{m}\big(\hat{y}_i - y_i\big)^2
 ]
 
 ```python
@@ -68,10 +68,8 @@ def compute_cost(x, y, w, b):
 Find the direction in which to adjust `w` and `b` to minimize cost.
 
 [
-\frac{\partial J}{\partial w} = \frac{1}{m}\sum (f_{w,b}(x_i) - y_i)x_i
-]
-[
-\frac{\partial J}{\partial b} = \frac{1}{m}\sum (f_{w,b}(x_i) - y_i)
+$$\frac{\partial J}{\partial w} = \frac{1}{m}\sum_{i=1}^{m}\big(\hat{y}_i - y_i\big)\,x_i$$
+$$\frac{\partial J}{\partial b} = \frac{1}{m}\sum_{i=1}^{m}\big(\hat{y}_i - y_i\big)$$]
 ]
 
 ```python
@@ -94,10 +92,8 @@ def compute_gradient(x, y, w, b):
 Iteratively update parameters using the gradients.
 
 [
-w := w - \alpha \frac{\partial J}{\partial w}
-]
-[
-b := b - \alpha \frac{\partial J}{\partial b}
+$$w \leftarrow w - \alpha\,\frac{\partial J}{\partial w}$$
+$$b \leftarrow b - \alpha\,\frac{\partial J}{\partial b}$$
 ]
 
 ```python

@@ -78,6 +78,7 @@ $$
 $$
 ]
 
+
 ```python
 def compute_gradient(x, y, w, b):
     m = len(x)

@@ -138,12 +138,11 @@ A + B  # Broadcasting adds row and column vectors
 -----
 
 ## Revision Checklist
-
-  * Understand forward and backward propagation
-  * Recall sigmoid and cost equations
-  * Apply vectorization for efficiency
-  * Compare TensorFlow and NumPy approaches
-  * Recognize the role of the learning rate in convergence
+  - Understand forward and backward propagation
+  - Recall sigmoid and cost equations
+  - Apply vectorization for efficiency
+  - Compare TensorFlow and NumPy approaches
+  - Recognize the role of the learning rate in convergence
 
 -----
 

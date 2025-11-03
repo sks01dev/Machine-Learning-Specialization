@@ -1,4 +1,4 @@
-# Neural Networks for Handwritten Digit Recognition — Revision Notes
+# Neural Networks for Handwritten Digit Recognition
 
 This document summarizes the key concepts from the **C2\_W1\_Assignment.ipynb** notebook.
 It focuses on **binary classification** of handwritten digits (0 and 1) using neural networks, implemented with both **NumPy** and **TensorFlow**.
@@ -139,11 +139,11 @@ A + B  # Broadcasting adds row and column vectors
 
 ## Revision Checklist
 
-  * [x] Understand forward and backward propagation
-  * [x] Recall sigmoid and cost equations
-  * [x] Apply vectorization for efficiency
-  * [x] Compare TensorFlow and NumPy approaches
-  * [x] Recognize the role of the learning rate in convergence
+  * Understand forward and backward propagation
+  * Recall sigmoid and cost equations
+  * Apply vectorization for efficiency
+  * Compare TensorFlow and NumPy approaches
+  * Recognize the role of the learning rate in convergence
 
 -----
 

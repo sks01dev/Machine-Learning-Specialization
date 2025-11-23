@@ -1,4 +1,4 @@
-## 🎨 K-Means Clustering: Simple Revision Notes
+## 🎨 K-Means Clustering
 
 K-Means is a way to automatically find **$K$ groups (clusters)** in your unlabeled data. Its goal is to make the groups as **tight and distinct** as possible.
 

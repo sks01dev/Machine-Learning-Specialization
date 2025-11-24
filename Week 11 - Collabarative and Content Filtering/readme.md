@@ -20,7 +20,7 @@ The system learns two sets of secret (hidden) feature vectors simultaneously to 
 | :--- | :--- | :--- |
 | **User Preference Vector** ($x^{(i)}$) | A hidden vector representing User $i$'s secret preferences (e.g., how much they like Action vs. Drama). | N/A |
 | **Item Feature Vector** ($\theta^{(j)}$) | A hidden vector representing Item $j$'s secret characteristics (e.g., how Action-packed vs. Dramatic the movie is). | N/A |
-| **Prediction** ($\hat{r}_{i, j}$) | The predicted rating is the **multiplication** of the User's secret preference vector and the Item's secret characteristic vector. | $$\hat{r}_{i,j} = x^{(i)} \cdot \theta^{(j)}$$ |
+| **Prediction** ($$J = \frac{1}{2} \sum_{(i,j): r(i,j)=1} ((\mathbf{x}^{(i)})^T\mathbf{\theta}^{(j)} - y^{(i,j)})^2 + \frac{\lambda}{2} \sum_{i=1}^{n_u} \sum_{k=1}^{n} (\mathbf{x}_k^{(i)})^2 + \frac{\lambda}{2} \sum_{j=1}^{n_m} \sum_{k=1}^{n} (\mathbf{\theta}_k^{(j)})^2$$) |
 | **Learning Goal** (Cost Function $J$) | The model uses **Gradient Descent** to find the optimal $x^{(i)}$ and $\theta^{(j)}$ vectors that make the prediction error as small as possible. **Regularization** ($\lambda$) is crucial to stop the vectors from getting too large (avoiding overfitting). | $$J = \text{Error} + \frac{\lambda}{2} \sum_{i, k} (\mathbf{x}_k^{(i)})^2 + \frac{\lambda}{2} \sum_{j, k} (\mathbf{\theta}_k^{(j)})^2$$ |
 
 | **Pro** | **Con** |
